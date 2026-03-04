@@ -1,0 +1,32 @@
+.header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.article-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 100%;
+    margin: 10px 0;
+  }
+}
